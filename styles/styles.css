@@ -1,6 +1,3 @@
-/* GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -265,33 +262,3 @@ footer {
   border-radius: 6px 6px 0 0;
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
-
-  nav ul {
-    flex-direction: column;
-    display: none;
-  }
-
-  nav.open ul {
-    display: flex;
-  }
-
-  .top-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .header-top {
-    flex-wrap: wrap;
-  }
-
-  .filters,
-  .course-list {
-    flex-direction: column;
-  }
-
-  .filters button,
-  .course-list span {
-    width: 100%;
-  }
-}

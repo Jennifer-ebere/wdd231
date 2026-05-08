@@ -1,0 +1,30 @@
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+    display: none;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  .top-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-top {
+    flex-wrap: wrap;
+  }
+
+  .filters,
+  .course-list {
+    flex-direction: column;
+  }
+
+  .filters button,
+  .course-list span {
+    width: 100%;
+  }
+}
