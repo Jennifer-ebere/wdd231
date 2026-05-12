@@ -1,0 +1,53 @@
+[
+  {
+    "familyName": "Okafor",
+    "moveInDate": "2025-08-14",
+    "familySize": 4,
+    "visitedByBishopric": true,
+    "familyMembers": [
+      {
+        "name": "Chinedu Okafor",
+        "gender": "Male",
+        "birthdate": "1985-03-12"
+      },
+      {
+        "name": "Amara Okafor",
+        "gender": "Female",
+        "birthdate": "1988-07-21"
+      },
+      {
+        "name": "Daniel Okafor",
+        "gender": "Male",
+        "birthdate": "2012-11-05"
+      },
+      {
+        "name": "Grace Okafor",
+        "gender": "Female",
+        "birthdate": "2016-04-17"
+      }
+    ]
+  },
+  {
+    "familyName": "Adeyemi",
+    "moveInDate": "2026-01-10",
+    "familySize": 3,
+    "visitedByBishopric": false,
+    "familyMembers": [
+      {
+        "name": "Tunde Adeyemi",
+        "gender": "Male",
+        "birthdate": "1990-09-08"
+      },
+      {
+        "name": "Kemi Adeyemi",
+        "gender": "Female",
+        "birthdate": "1992-05-14"
+      },
+      {
+        "name": "David Adeyemi",
+        "gender": "Male",
+        "birthdate": "2019-02-28"
+      }
+    ]
+  }
+]

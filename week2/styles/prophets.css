@@ -1,0 +1,63 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center align content */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh; /* Ensure footer stays at the bottom */
+  background-color: #f0f0f0; 
+  font-family: "Roboto Slab", serif;
+  color: rgba(0, 0, 128, 0.845); 
+}
+
+/* Header and footer styles */
+h1, h2, footer {
+  color: rgba(0, 0, 128, 0.845); /* Navy text color */
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem; /* Larger font size for header */
+}
+
+#cards {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* Cards container */
+#cards {
+  display: grid;
+  gap: 0.1rem;
+  justify-items: center;
+}
+
+/* Card styles */
+section {
+  background-color: #32648147; 
+  border: 1px solid rgba(0, 0, 128, 0.845); 
+  margin: 0.25rem;
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin-top: 3px;
+  max-width: 80%;
+  height: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer styles */
+footer {
+  font-size: xx-large;
+  font-weight: 600; 
+  padding: 10px 0;
+}

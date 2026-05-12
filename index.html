@@ -1,106 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is Jennifer Ebere's Home page for my web development course project.">
-    <meta name="author" content="Ebere Jennifer Chikaodi">
-    <title>Home | Jennifer Ebere</title>
-
-    <!-- This line will remove the favicon error by using your logo -->
-    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is Jennifer Ebere's Home page for my web development course project."
+    />
+    <meta name="author" content="Ebere Jennifer Chikaodi" />
+    <title>Jennifer C. Ebere - WDD 231 - Web Frontend Development 1</title>
+    <meta property="og:title" content="WDD 231 - Web Frontend Development 1" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="This is Jennifer Ebere's course assignment portal for WDD 231 - Web Frontend Development 1."
+    />
+    <meta
+      property="og:image"
+      content="https://www.worldatlas.com/r/w960-q80/upload/2c/03/00/shutterstock-1481073440.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://jennifer-ebere.github.io/wdd231/"
+    />
+    <link rel="icon" href="images/favicon.ico" />
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
     <script src="scripts/courses.js" defer></script>
     <script src="scripts/script.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="header-top">
-            <!-- SVG Logo -->
-            <img src="images/logo.svg" alt="Site Logo" width="40" height="40" loading="lazy">
-            <span class="text">Jennifer C. Ebere</span>
-            <!-- Hamburger -->
-            <button id="menuBtn">☰</button>
-        </div>
+      <div class="header-top">
+        <!-- SVG Logo -->
+        <img
+          src="images/logo.png"
+          alt="Site Logo"
+          width="40"
+          height="40"
+          loading="lazy"
+        />
+        <span class="text">Jennifer C. Ebere</span>
+        <!-- Hamburger -->
+        <button id="menuBtn">☰</button>
+      </div>
 
-        <!-- NAVIGATION -->
-        <nav id="navMenu">
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="chamber.html">Chamber Project</a></li>
-                <li><a href="final.html">Final Project</a></li>
-            </ul>
-        </nav>
+      <!-- NAVIGATION -->
+      <nav id="navMenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="chamber.html">Chamber Project</a></li>
+          <li><a href="final.html">Final Project</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- MAIN CONTENT -->
     <main>
-        <h1>Home</h1>
+      <h1>Home</h1>
 
-        <!-- TOP GRID -->
-        <div class="top-grid">
-            <section>
-                <h2>About Me</h2>
-                <p>
-                    Massa Facilisis Per Purus Sit Imperdiet Curae Amet. Et Fames Lorem Mi Phasellus Congue Nascetur Enim
-                    Consectetur Sociisquam Natoque Risus. Suspendisse potenti, habitant senectus curae vulputate dapibus
-                    himenaeos. Integer malesuada commodo dictumst, pulvinar tincidunt class aliquam. Cras feugiat
-                    dignissim montes, maecenas tristique vestibulum parturient. Ullamcorper vitae torquent euismod
-                    placerat, sapien dis fermentum netus. Quisque malesuada ligula praesent interdum, accumsan taciti
-                    sapien habitasse.
-                </p>
-            </section>
+      <!-- TOP GRID -->
+      <div class="top-grid">
+        <section>
+          <h2>About Me</h2>
+          <p>
+            Massa Facilisis Per Purus Sit Imperdiet Curae Amet. Et Fames Lorem
+            Mi Phasellus Congue Nascetur Enim Consectetur Sociisquam Natoque
+            Risus. Suspendisse potenti, habitant senectus curae vulputate
+            dapibus himenaeos. Integer malesuada commodo dictumst, pulvinar
+            tincidunt class aliquam. Cras feugiat dignissim montes, maecenas
+            tristique vestibulum parturient. Ullamcorper vitae torquent euismod
+            placerat, sapien dis fermentum netus. Quisque malesuada ligula
+            praesent interdum, accumsan taciti sapien habitasse.
+          </p>
+        </section>
 
-            <section>
-                <h2>Student Photo</h2>
-                <div class="photo-box">
-                    <img src="images/myphoto.jpg" alt="my picture" width="145" height="145" loading="lazy"
-                        class="center-image">
-                </div>
-            </section>
+        <section>
+          <h2>Student Photo</h2>
+          <div class="photo-box">
+            <img
+              src="images/myphoto.jpg"
+              alt="my picture"
+              width="145"
+              height="145"
+              loading="lazy"
+              class="center-image"
+            />
+          </div>
+        </section>
+      </div>
+
+      <!-- COURSES -->
+      <section class="courses">
+        <h2>Web Certificate Courses</h2>
+        <div class="filters">
+          <button id="allBtn">All Courses</button>
+          <button id="cseBtn">CSE Courses</button>
+          <button id="wddBtn">WDD Courses</button>
         </div>
 
-        <!-- COURSES -->
-        <section class="courses">
-            <h2>Web Certificate Courses</h2>
-            <div class="filters">
-                <button id="allBtn">All Courses</button>
-                <button id="cseBtn">CSE Courses</button>
-                <button id="wddBtn">WDD Courses</button>
-            </div>
-
-            <div id="courseContainer"></div>
-            <p id="creditTotal"></p>
-        </section>
+        <div id="courseContainer"></div>
+        <p id="creditTotal"></p>
+      </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <div class="social">
-            <a href="www.linkedin.com/in/jennifer-ebere-699460242" target="_blank"><img src="images/linkedin.svg"
-                    alt="LinkedIn" width="16" height="16"></a>
-            <a href="https://github.com/Jennifer-ebere/wdd231" target="_blank"><img src="images/github.svg" 
-                alt="GitHub" width="16" height="16"></a>
-            <a href="https://www.facebook.com/Jennyy.ebere" target="_blank"><img src="images/facebook.svg"
-                    alt="Facebook" width="16" height="16"></a>
-            <a href="https://www.instagram.com/jennyy_ebere/" target="_blank"><img src="images/instagram.svg"
-                    alt="Instagram" width="16" height="16"></a>
-        </div>
+      <div class="social">
+        <a href="www.linkedin.com/in/jennifer-ebere-699460242" target="_blank"
+          ><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"
+        /></a>
+        <a href="https://github.com/Jennifer-ebere/wdd231" target="_blank"
+          ><img src="images/github.svg" alt="GitHub" width="16" height="16"
+        /></a>
+        <a href="https://www.facebook.com/Jennyy.ebere" target="_blank"
+          ><img src="images/facebook.svg" alt="Facebook" width="16" height="16"
+        /></a>
+        <a href="https://www.instagram.com/jennyy_ebere/" target="_blank"
+          ><img
+            src="images/instagram.svg"
+            alt="Instagram"
+            width="16"
+            height="16"
+        /></a>
+      </div>
 
-        <div class="footer-info">
-            <p id="footerText"></p>
-            <p id="lastModified"></p>
-        </div>
+      <div class="footer-info">
+        <p id="footerText"></p>
+        <p id="lastModified"></p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
