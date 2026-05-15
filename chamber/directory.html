@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagos Chamber of Commerce - Directory</title>
+    <meta
+      name="description"
+      content="This is a business directory for the Lagos Chamber of Commerce Directory."
+    />
+    <meta name="author" content="Ebere Jennifer Chikaodi" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Lagos Chamber of Commerce - Directory" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Explore the Lagos Chamber of Commerce directory to learn about various companies and their information."
+    />
+    <meta
+      property="og:image"
+      content="https://www.worldatlas.com/r/w960-q80/upload/2c/03/00/shutterstock-1481073440.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://jennifer-ebere.github.io/wdd231/"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="hero">
+        <img
+          src="images/chamber-of-commerce.webp"
+          fetchpriority="high"
+          loading="eager"
+          alt="Lagos Chamber Logo"
+          width="60"
+          height="60"
+        />
+        <h1>LAGOS CHAMBER OF COMMERCE</h1>
+      </div>
+
+      <button id="menu" aria-label="Toggle navigation">☰</button>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="directory.html" class="active">Directory</a>
+          </li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-directory">
+      <h2>Lagos Chamber Member Directory</h2>
+      <div class="view-toggle">
+        <button id="grid-view">Grid View</button>
+        <button id="list-view">List View</button>
+      </div>
+      <div id="membersCard" class="grid-view">
+        <!-- Member cards will be inserted here -->
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Lagos Chamber of Commerce</h3>
+          <p>Lagos, Nigeria</p>
+          <p>info@lagoscc.org</p>
+          <p>+234 8108694398</p>
+        </div>
+
+        <div class="footer-center">
+          <a href="www.linkedin.com/in/jennifer-ebere-699460242" target="_blank"
+            ><img
+              src="images/linkedin.svg"
+              loading="lazy"
+              alt="LinkedIn"
+              width="16"
+              height="16"
+          /></a>
+          <a
+            href="https://github.com/Jennifer-ebere/wdd231"
+            target="_blank"
+            loading="lazy"
+            ><img src="images/github.svg" alt="GitHub" width="16" height="16"
+          /></a>
+          <a href="https://www.facebook.com/Jennyy.ebere" target="_blank"
+            ><img
+              src="images/facebook.svg"
+              loading="lazy"
+              alt="Facebook"
+              width="16"
+              height="16"
+          /></a>
+          <a href="https://www.instagram.com/jennyy_ebere/" target="_blank"
+            ><img
+              src="images/instagram.svg"
+              loading="lazy"
+              alt="Instagram"
+              width="16"
+              height="16"
+          /></a>
+        </div>
+
+        <div class="footer-right">
+          <p>WDD231 Class Project</p>
+          <p>Jennifer Chikaodi Ebere</p>
+          <p>&copy;<span id="currentYear"></span> Lagos Chamber of Commerce</p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

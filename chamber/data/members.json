@@ -1,0 +1,112 @@
+{
+  "members": [
+    {
+      "name": "Techie World",
+      "address": "123, Sinklet Drive, Victoria Island, Lagos",
+      "phone": "+234 701 555 1934",
+      "website": "https://techieworld.com",
+      "image": "images/techie-world-logo.webp",
+      "membershipLevel": "1",
+      "additional_info": {
+        "industry": "Information Technology",
+        "ceo": "Jason Desmond"
+      } 
+    },
+    {
+      "name": "Green Wave Corp",
+      "address": "23, Sky Dive Avenue, Lekki, Lagos",
+      "phone": "+234 901 120 5118",
+      "website": "https://greenwave.com",
+      "image": "images/greenwave-logo.webp",
+      "membershipLevel": "3",
+      "additional_info": {
+        "industry": "Renewable Energy",
+        "ceo": "Jane Sundown Smith"
+      } 
+    },
+    {
+      "name": "AquaPure Enterprises",
+      "address": "78, Jiggy Street, Ikeja, Lagos",
+      "phone": "+234 134 495 9151",
+      "website": "https://aquapure.com",
+      "image": "images/aquapure-logo.webp",
+      "membershipLevel": "2",
+      "additional_info": {
+        "industry": "Water Treatment",
+        "ceo": "Michael Smith"
+      } 
+    },
+    {
+      "name": "EduTech Innovations",
+      "address": "321, Smart Road, Yaba, Lagos",
+      "phone": "+234 901 606 1922",
+      "website": "https://edutech.com",
+      "image": "images/edutech-logo.webp",
+      "membership_level": "1",
+      "additional_info": {
+        "industry": "Education Technology",
+        "ceo": "Nathalie Beckham"
+      } 
+    },
+    {
+      "name": "FashionForward",
+      "address": "147, Range Road, Ikoyi, Lagos",
+      "phone": "+234 803 931 1983",
+      "website": "https://fashionforward.com",
+      "image": "images/fastforward-logo.webp",
+      "membership_level": "3",
+      "additional_info": {
+        "industry": "Fashion",
+        "ceo": "Emma Layston"
+      } 
+    },
+    {
+      "name": "BuildIt Construction",
+      "address": "987, Moukoulu Estate, Apapa, Lagos",
+      "phone": "+234 700 573 9821",
+      "website": "https://buildit.com",
+      "image": "images/buildit-logo.webp",
+      "membership_level": "3",
+      "additional_info": {
+        "industry": "Construction",
+        "ceo": "Desmond Sorton"
+      } 
+    },
+    {
+      "name": "MediHealth Services",
+      "address": "654, Wellness Avenue, Surulere, Lagos",
+      "phone": "+234 084 985 3144",
+      "website": "https://medihealth.com",
+      "image": "images/medihealth-logo.webp",
+      "membership_level": "2",
+      "additional_info": {
+        "industry": "Healthcare",
+        "ceo": "Jayden Wilson"
+      } 
+    },
+    {
+      "name": "Tech Innovation",
+      "address": "123, Silicon Avenue, Lekki, Lagos",
+      "phone": "+234 802 123 2311",
+      "website": "https://techinnovation.ng",
+      "image": "images/techinnovation-logo.webp",
+      "membershipLevel": "1",
+      "additional_info": {
+        "industry": "Technology",
+        "ceo": "Agness Akorede"
+      }
+    },
+    {
+      "name": "Green Earth Solutions",
+      "address": "456, Green Street, Victoria Island, Lagos",
+      "phone": "+234 803 765 4321",
+      "website": "https://greenearthsolutions.ng",
+      "image": "images/greenearth-logo.webp",
+      "membershipLevel": "2",
+      "additional_info": {
+        "industry": "Environmental Services",
+        "ceo": "Isgett Daines"
+      }
+    }
+  ]
+}
