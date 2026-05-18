@@ -1,0 +1,28 @@
+#weather-icon {
+    background-color: rgb(210, 139, 53);
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption{
+    text-align: center;
+    margin-top: 10px;
+    color:orchid;
+}
+
+h1 {
+    color: cornflowerblue;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: hotpink;
+
+}
+
+footer {
+    text-align: center;
+    color: hotpink;
+}
