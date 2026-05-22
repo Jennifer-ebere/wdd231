@@ -133,6 +133,10 @@ header {
   background-color: #00b68f;
 }
 
+.intro {
+  color:#0077b6
+}
+
 /* HOME GRID */
 .top-grid {
   display: grid;
