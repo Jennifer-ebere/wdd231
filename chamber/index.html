@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lagos Chamber of Commerce HomePage</title>
+    <meta
+      name="description"
+      content="This is the homepage for Lagos Chamber of Commerce where you can gain more information about community events around you and as well interact with other businesses."
+    />
+    <meta name="author" content="Ebere Jennifer Chikaodi" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Lagos Chamber of Commerce Homepage" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="This is the homepage for the Lagos Chamber of Commerce and if you are looking to get extra information about the events happening aroud you, keep your eyes glued to this page."
+    />
+    <meta
+      property="og:image"
+      content="https://jennifer-ebere.github.io/wdd231/chamber/images/hero.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://jennifer-ebere.github.io/wdd231/"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/chamber-of-commerce.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="hero">
+        <img
+          src="images/chamber-of-commerce.webp"
+          fetchpriority="high"
+          loading="eager"
+          alt="Lagos Chamber Logo"
+          width="60"
+          height="60"
+        />
+        <h2>LAGOS CHAMBER OF COMMERCE</h2>
+      </div>
+
+      <button id="menu" aria-label="Toggle navigation">☰</button>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li>
+            <a href="directory.html">Directory</a>
+          </li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-home">
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <img
+      src="images/hero.webp"
+      alt="Lagos city skyline"
+      width="1200"
+      height="500"
+      loading="eager"
+    />
+
+    <a href="join.html" class="cta-button">
+      Join the Chamber
+    </a>
+
+  </section>
+
+  <!-- TOP HOME GRID -->
+  <section class="top-grid">
+
+    <!-- EVENTS -->
+    <section class="card">
+      <h2>Events</h2>
+
+      <div class="card-content">
+        <h3>
+          Lagos Business Summit coming this Friday at Civic Center.
+        </h3>
+
+        <h3>
+          Entrepreneurship Networking Meetup this weekend.
+        </h3>
+
+        <h3>Annual Business Networking Gala</h3>
+            <ul>
+              <li>Date: September 10, 2026</li>
+              <li>Time: 6:00 PM - 9:00 PM</li>
+              <li>Description: An evening of networking with top business leaders in Lagos. Connect and collaborate.</li>
+            </ul>
+      </div>
+    </section>
+
+    <!-- CURRENT WEATHER -->
+    <section class="card weather-card">
+      <h2>Current Weather</h2>
+      <div id="current-weather">
+        <img
+          id="weather-icon"
+          src=""
+          alt=""
+          width="50"
+          height="50"
+        />
+        <div>
+         <span class="dash">-</span>
+          <p><span id="current-temp"></span></p>
+          <span class="dash">-</span>
+          <p id="weather-desc"></p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FORECAST -->
+    <section class="card forecast-card">
+
+      <h2>Weather Forecast</h2>
+
+      <div id="forecast">
+
+        <!-- JavaScript inserts forecast cards -->
+
+      </div>
+
+</section>
+
+  </section>
+
+  <!-- SPOTLIGHT SECTION -->
+  <section>
+    <div id="spotlight-container">
+      <!-- JS inserts spotlight cards -->
+
+    </div>
+
+  </section>
+
+  </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h2>Lagos Chamber of Commerce</h2>
+          <p>Lagos, Nigeria</p>
+          <p>info@lagoscc.org</p>
+          <p>+234 8108694398</p>
+        </div>
+
+        <div class="footer-center">
+          <a href="www.linkedin.com/in/jennifer-ebere-699460242" target="_blank"
+            ><img
+              src="images/linkedin.svg"
+              loading="lazy"
+              alt="LinkedIn Logo"
+              width="16"
+              height="16"
+          /></a>
+          <a href="https://github.com/Jennifer-ebere/wdd231" target="_blank"
+            ><img src="images/github.svg" alt="GitHub Logo" width="16" height="16"
+          /></a>
+          <a href="https://www.facebook.com/Jennyy.ebere" target="_blank"
+            ><img
+              src="images/facebook.svg"
+              loading="lazy"
+              alt="Facebook Logo"
+              width="16"
+              height="16"
+          /></a>
+          <a href="https://www.instagram.com/jennyy_ebere/" target="_blank"
+            ><img
+              src="images/instagram.svg"
+              loading="lazy"
+              alt="Instagram Logo"
+              width="16"
+              height="16"
+          /></a>
+        </div>
+
+        <div class="footer-right">
+          <p>WDD231 Class Project</p>
+          <p>Jennifer Chikaodi Ebere</p>
+          <p>&copy;<span id="currentYear"></span> Lagos Chamber of Commerce</p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

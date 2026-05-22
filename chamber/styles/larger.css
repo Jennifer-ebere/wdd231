@@ -1,7 +1,6 @@
 @media screen and (min-width: 768px) {
 
   /* ---------------- NAVIGATION ---------------- */
-
   #menu {
     display: none;
   }
@@ -25,7 +24,6 @@
   }
 
   /* ---------------- HEADER ---------------- */
-
   header {
     display: flex;
     justify-content: space-between;
@@ -36,14 +34,33 @@
     font-size: 1.8rem;
   }
 
-  /* ---------------- GRID VIEW ---------------- */
+  /* ---------------- HOME GRID ---------------- */
+  .top-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
 
+  /* ---------------- SPOTLIGHTS ---------------- */
+  #spotlight-container {
+
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* ---------------- WEATHER ---------------- */
+  .weather-card {
+    flex-wrap: nowrap;
+  }
+
+  /* ---------------- FORECAST ---------------- */
+  .forecast-card {
+    flex-wrap: nowrap;
+  }
+
+  /* ---------------- GRID VIEW ---------------- */
   .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
   /* ---------------- LIST VIEW ---------------- */
-
   .list-view .member-card {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
@@ -60,7 +77,6 @@
   }
 
   /* ---------------- FOOTER ---------------- */
-
   .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -78,7 +94,6 @@
 }
 
 /* Large Desktop */
-
 @media screen and (min-width: 1024px) {
 
   .grid-view {

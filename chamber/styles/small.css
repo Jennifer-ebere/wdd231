@@ -7,8 +7,6 @@
   --white: #ffffff;
 }
 
-/* ------------------ GLOBAL STYLES ------------------ */
-
 * {
   box-sizing: border-box;
 }
@@ -34,7 +32,6 @@ footer {
 }
 
 /* ------------------ HEADER ------------------ */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -55,8 +52,8 @@ header {
   width: 50px;
   height: 50px;
   object-fit: cover;
-  border-radius: 3px;  
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero h1 {
@@ -66,7 +63,6 @@ header {
 }
 
 /* ------------------ NAVIGATION ------------------ */
-
 #menu {
   display: block;
   background: none;
@@ -88,7 +84,6 @@ header {
   display: flex;
 }
 
-
 .navigation a {
   display: block;
   padding: 1rem;
@@ -99,15 +94,164 @@ header {
 
 .navigation a:hover {
   background-color: rgb(8, 197, 255);
-  color:beige ;
+  color: beige;
 }
 
 .navigation a.active {
   border-bottom: 2px solid #222;
 }
 
-/* ------------------ MAIN DIRECTORY ------------------ */
+/* ---------------- MAIN HOME ---------------- */
+.main-home {
+  padding: 1rem;
+}
 
+/* HERO */
+.hero-section {
+  position: relative;
+}
+
+.hero-section img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.cta-button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background-color: #0a6cb2;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #00b68f;
+}
+
+/* HOME GRID */
+.top-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+  grid-auto-rows: 1fr;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  background-color: #0763a5;
+  color: white;
+  padding: 0.8rem;
+  margin: -0.5rem -0.5rem 1rem -0.5rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-content,
+.weather-content,
+.forecast-content {
+  padding: 1rem;
+}
+
+/* WEATHER */
+.weather-card {
+  display: flex;
+  margin: 0;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
+}
+
+.weather-card span,
+.weather-card div {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: space-evenly;
+}
+
+.dash {
+  margin: 0 0.3rem;
+}
+
+/* FORECAST */
+.forecast-card {
+  display: flex;
+  margin: 0;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.forecast-card h3 {
+  width: 90px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.forecast-card p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.forecast-card img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+/* SPOTLIGHTS */
+#spotlight-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.spotlight-card {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.spotlight-card p {
+  margin: 0.3rem 0;
+}
+
+.spotlight-card a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  text-decoration: none;
+  color: white;
+  background-color: #0077b6;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/* ------------------ MAIN DIRECTORY ------------------ */
 main {
   padding: 1rem;
 }
@@ -118,7 +262,6 @@ main {
 }
 
 /* Toggle Buttons */
-
 .view-toggle {
   display: flex;
   justify-content: right;
@@ -141,7 +284,6 @@ main {
 }
 
 /* Grid View */
-
 .grid-view {
   display: grid;
   grid-template-columns: 1fr;
@@ -161,15 +303,10 @@ main {
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
 }
+
 .member-card img {
-  /* width: 200px;
-  height: 200px;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto; */
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -187,7 +324,6 @@ main {
 }
 
 /* List View */
-
 .list-view {
   display: flex;
   flex-direction: column;
@@ -199,7 +335,6 @@ main {
 }
 
 /* ------------------ FOOTER ------------------ */
-
 footer {
   background-color: var(--primary-color);
   padding: 2rem 1rem;
