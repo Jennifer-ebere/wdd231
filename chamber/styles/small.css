@@ -144,6 +144,9 @@ header {
   height: 100%;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease forwards;
+  opacity: 0;
 }
 
 .card h2 {
@@ -381,12 +384,6 @@ input[type="submit"] {
 .membership-cards {
   display: grid;
   gap: 1rem;
-}
-
-.card {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  animation: slideIn 1s ease forwards;
-  opacity: 0;
 }
 
 .card:nth-child(1) {
