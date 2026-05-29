@@ -7,6 +7,37 @@ document.addEventListener("DOMContentLoaded", () => {
         nav.classList.toggle("open");
     });
 
+    // FOR THANK YOU PAGE
+    const timestampField = document.getElementById("timestamp");
+
+    if (timestampField) {
+        const now = new Date();
+
+        const date = now.toLocaleDateString();
+        const time = now.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false
+        });
+
+        timestampField.value = `${date} ${time}`;
+    }
+
+    const params = new URLSearchParams(window.location.search);
+
+    const set = (id, value) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = value;
+    };
+
+    set("firstname", params.get("firstname"));
+    set("lastname", params.get("lastname"));
+    set("email", params.get("email"));
+    set("phone", params.get("phone"));
+    set("business", params.get("business"));
+    set("timestamp", params.get("timestamp"));
+
+
     const yearSpan = document.querySelector("#currentYear");
     const lastModifiedSpan = document.querySelector("#lastModified");
 
@@ -176,7 +207,5 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Spotlight error:", error);
         }
     }
-
     loadSpotlights();
-
 })

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Lagos Chamber of Commerce HomePage</title>
+    <title>The Lagos Chamber of Commerce Thank You Page</title>
     <meta
       name="description"
-      content="Homepage for Lagos Chamber of Commerce where you can gain more information about community events and things around you."
+      content="A page for the Lagos Chamber of Commerce where you can receive thank you messages after joining."
     />
     <meta name="author" content="Ebere Jennifer Chikaodi" />
 
@@ -14,11 +14,11 @@
     <link rel="icon" href="images/favicon.ico" />
 
     <!-- Facebook Open Graph Meta -->
-    <meta property="og:title" content="Lagos Chamber of Commerce Homepage" />
+    <meta property="og:title" content="Lagos Chamber of Commerce Thank You page" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Welcome to the Lagos Chamber of Commerce — stay updated on exciting local events, opportunities, and community news."
+      content="Welcome to the Lagos Chamber of Commerce Thank You Page — where extra informations on signing in is sent for customer's view.."
     />
     <meta
       property="og:image"
@@ -59,73 +59,29 @@
 
       <nav>
         <ul class="navigation">
-          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li>
             <a href="directory.html">Directory</a>
           </li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="join.html" class="active" >Join</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main-home">
-      <h1 class="intro">A Page Where Business Opportunities Meet Community Impact &#127802;</h1>
-        <!-- HERO SECTION -->
-      <section class="hero-section">
-        <img src="images/hero.webp" alt="Lagos city skyline" width="1200" height="500" loading="eager"/>
+      <div class="thankyou-card">
+        <h1>Thank You for signing up to join Lagos Chamber of Commerce!</h1>
+        <p>Your membership application has been submitted successfully.</p>
 
-        <a href="join.html" class="cta-button"> Join the Chamber </a>
-      </section>
-
-      <!-- TOP HOME GRID -->
-      <section class="top-grid">
-
-        <!-- EVENTS -->
-        <section class="card">
-          <h2>Events</h2>
-
-          <div class="card-content">
-            <h3>Lagos Business Summit coming this Friday at Civic Center.</h3>
-
-            <h3>Entrepreneurship Networking Meetup this weekend.</h3>
-
-            <h3>Annual Business Networking Gala on the 10th of September 2026 by 6pm</h3>
-          </div>
-        </section>
-
-        <!-- CURRENT WEATHER -->
-        <section class="card weather-card">
-          <h2>Current Weather</h2>
-          <div id="current-weather">
-            <img id="weather-icon" src="images/placeholder-weather-icon.webp" alt="weather" width="50" height="50"/>
-            <div>
-              <span class="dash">-</span>
-                <p><span id="current-temp"></span></p>
-                <span class="dash">-</span>
-                <p id="weather-desc"></p>
-            </div>
-          </div>
-        </section>
-
-        <!-- FORECAST -->
-        <section class="card forecast-card">
-          <h2>Weather Forecast</h2>
-          <div id="forecast">
-            <!-- JavaScript inserts forecast cards -->
-          </div>
-
-        </section>
-
-      </section>
-
-      <!-- SPOTLIGHT SECTION -->
-      <section>
-        <div id="spotlight-container">
-          <!-- JS inserts spotlight cards -->
-        </div>
-      </section>
-
+        <h2>Submitted Information</h2>
+        <p><strong>First Name:</strong> <span id="firstname"></span></p>
+        <p><strong>Last Name:</strong> <span id="lastname"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+        <p><strong>Business Name:</strong> <span id="business"></span></p>
+        <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+      </div>
     </main>
 
     <footer>

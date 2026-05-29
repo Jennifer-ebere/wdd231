@@ -34,33 +34,47 @@
     font-size: 1.8rem;
   }
 
-  /* ---------------- HOME GRID ---------------- */
+  /* ---------------- HOME PAGE FOR THE WEATHER AND FORECAST CARD ---------------- */
   .top-grid {
-    grid-template-columns: 2fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
   }
 
-  /* ---------------- SPOTLIGHTS ---------------- */
-  #spotlight-container {
-
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  /* ---------------- WEATHER ---------------- */
   .weather-card {
     flex-wrap: nowrap;
   }
 
-  /* ---------------- FORECAST ---------------- */
   .forecast-card {
     flex-wrap: nowrap;
   }
 
-  /* ---------------- GRID VIEW ---------------- */
+  .weather-card div,
+  .forecast-card div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+  }
+
+  .weather-card p,
+  .forecast-card p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* ---------------- FOR THE SPOTLIGHTS ---------------- */
+  #spotlight-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /* ---------------- GRID VIEW IN THE DIRECTORY PAGE ---------------- */
   .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  /* ---------------- LIST VIEW ---------------- */
+  /* ---------------- LIST VIEW IN THE DIRECTORY PAGE ---------------- */
   .list-view .member-card {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
@@ -74,6 +88,10 @@
 
   .list-view .member-card:nth-child(odd) {
     background-color: #f1f1f1;
+  }
+
+  .join-container {
+    grid-template-columns: 2fr 1fr;
   }
 
   /* ---------------- FOOTER ---------------- */
