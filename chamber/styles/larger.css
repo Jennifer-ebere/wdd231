@@ -54,7 +54,6 @@
   .forecast-card div {
     display: flex;
     flex-wrap: wrap;
-    align-items: left;
   }
 
   .weather-card p,

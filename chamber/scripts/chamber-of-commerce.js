@@ -1,5 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+    document.querySelectorAll("[data-modal]").forEach(button => {
+        button.addEventListener("click", () => {
+            const modalId = button.dataset.modal;
+            document.getElementById(modalId).showModal();
+        });
+    });
+
+    document.querySelectorAll("dialog button").forEach(button => {
+        button.addEventListener("click", () => {
+            button.closest("dialog").close();
+        });
+    });
+
     const menuButton = document.querySelector("#menu");
     const nav = document.querySelector(".navigation");
 

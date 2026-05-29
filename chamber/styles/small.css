@@ -1,12 +1,4 @@
 /* ------------------ ROOT VARIABLES ------------------ */
-:root {
-  --primary-color: #0763a5;
-  --secondary-color: #000;
-  --text-color: #222;
-  --light-bg: #f8f9fa;
-  --white: #ffffff;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -14,8 +6,8 @@
 body {
   margin: 0;
   font-family: "Bellota", Arial, sans-serif;
-  color: var(--text-color);
-  background-color: var(--light-bg);
+  color: #222;
+  background-color: #f8f9fa;
   min-width: 320px;
 }
 
@@ -36,9 +28,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--primary-color);
+  background-color: #0763a5;
   padding: 1rem;
-  color: var(--white);
+  color: white;
   min-height: 90px;
 }
 
@@ -145,7 +137,7 @@ header {
 }
 
 .card {
-  background-color: #f2f2f2;
+  background-color: #f4f4f4;
   padding: 0.5rem;
   border-radius: 10px;
   overflow: hidden;
@@ -262,7 +254,7 @@ main {
 
 .main-directory h2 {
   text-align: center;
-  color: var(--secondary-color);
+  color: black;
 }
 
 /* Toggle Buttons */
@@ -277,14 +269,14 @@ main {
   border: none;
   padding: 0.75rem 1.2rem;
   cursor: pointer;
-  background-color: var(--primary-color);
-  color: var(--white);
+  background-color: #0763a5;
+  color: white;
   border-radius: 5px;
   font-size: 1rem;
 }
 
 .view-toggle button:hover {
-  background-color: var(--secondary-color);
+  background-color: black;
 }
 
 /* Grid View */
@@ -303,7 +295,7 @@ main {
 }
 
 .member-card {
-  background-color: var(--white);
+  background-color: #f4f4f4;
   border-radius: 8px;
   padding: 1rem;
   text-align: center;
@@ -318,7 +310,7 @@ main {
 
 .member-card h3,
 .member-card h4 {
-  color: var(--secondary-color);
+  color: black;
 }
 
 .member-card p,
@@ -339,10 +331,11 @@ main {
 }
 
 /* JOIN PAGE */
-h1 {
+.head {
   text-align: center;
   color: #0763a5;
   margin-bottom: 2rem;
+
 }
 
 .join-container {
@@ -391,11 +384,7 @@ input[type="submit"] {
 }
 
 .card {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
   animation: slideIn 1s ease forwards;
   opacity: 0;
 }
@@ -475,18 +464,13 @@ button {
   border-radius: 10px;
 }
 
-h1 {
-  margin-bottom: 1rem;
-  color: #0763a5;
-}
-
 p {
   margin-bottom: 1rem;
 }
 
 /* ------------------ FOOTER ------------------ */
 footer {
-  background-color: var(--primary-color);
+  background-color: #0763a5;
   padding: 2rem 1rem;
   margin-top: 2rem;
   color: white;
