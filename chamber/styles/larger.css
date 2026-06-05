@@ -1,6 +1,5 @@
 @media screen and (min-width: 768px) {
-
-  /* ---------------- NAVIGATION ---------------- */
+  /* NAVIGATION */
   #menu {
     display: none;
   }
@@ -23,7 +22,7 @@
     padding: 0.5rem 1rem;
   }
 
-  /* ---------------- HEADER ---------------- */
+  /* HEADER */
   header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +33,7 @@
     font-size: 1.8rem;
   }
 
-  /* ---------------- HOME PAGE FOR THE WEATHER AND FORECAST CARD ---------------- */
+  /* HOME PAGE FOR THE WEATHER AND FORECAST CARD */
   .top-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -62,18 +61,17 @@
     flex-wrap: wrap;
   }
 
-  /* ---------------- FOR THE SPOTLIGHTS ---------------- */
+  /* FOR THE SPOTLIGHTS */
   #spotlight-container {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
-  /* ---------------- GRID VIEW IN THE DIRECTORY PAGE ---------------- */
+  /* GRID VIEW IN THE DIRECTORY PAGE */
   .grid-view {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  /* ---------------- LIST VIEW IN THE DIRECTORY PAGE ---------------- */
+  /* LIST VIEW IN THE DIRECTORY PAGE */
   .list-view .member-card {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr 1fr;
@@ -93,7 +91,7 @@
     grid-template-columns: 2fr 1fr;
   }
 
-  /* ---------------- FOOTER ---------------- */
+  /* FOOTER */
   .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -110,9 +108,8 @@
   }
 }
 
-/* Large Desktop */
+/* LARGE DESKTOP */
 @media screen and (min-width: 1024px) {
-
   .grid-view {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -120,5 +117,36 @@
   main {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  /* DISCOVER PAGE */
+  .discover-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-areas: 
+    "card1 card2" 
+    "card3 card4" 
+    "card5 card6"
+    "card7 card8"; 
+  }
+
+   .discover-card {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .discover-card figure {
+    margin: 0;
+  }
+
+  .discover-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .discover-card img:hover { 
+    transform: scale(1.08); 
+    filter: brightness(1.1); 
   }
 }

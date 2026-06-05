@@ -1,4 +1,4 @@
-/* ------------------ ROOT VARIABLES ------------------ */
+/* ROOT VARIABLES */
 * {
   box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ footer {
   width: 100%;
 }
 
-/* ------------------ HEADER ------------------ */
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,7 @@ header {
   color: white;
 }
 
-/* ------------------ NAVIGATION ------------------ */
+/* NAVIGATION */
 #menu {
   display: block;
   background: none;
@@ -93,7 +93,7 @@ header {
   border-bottom: 2px solid #222;
 }
 
-/* ---------------- MAIN HOME ---------------- */
+/* MAIN HOME */
 .main-home {
   padding: 1rem;
 }
@@ -134,7 +134,7 @@ header {
   display: grid;
   gap: 1rem;
   margin-top: 1rem;
-}
+} 
 
 .card {
   background-color: #f4f4f4;
@@ -164,7 +164,7 @@ header {
   padding: 1rem;
 }
 
-/* WEATHER */
+/* WEATHER ON THE HOME PAGE */
 .weather-card {
   display: flex;
   margin: 0;
@@ -184,7 +184,7 @@ header {
   margin: 0 0.3rem;
 }
 
-/* FORECAST */
+/* FORECAST ON THE HOME PAGE */
 .forecast-card {
   display: flex;
   margin: 0;
@@ -209,7 +209,7 @@ header {
   flex-shrink: 0;
 }
 
-/* SPOTLIGHTS */
+/* SPOTLIGHTS on the Home Page */
 #spotlight-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -250,7 +250,7 @@ header {
   border-radius: 5px;
 }
 
-/* ------------------ MAIN DIRECTORY ------------------ */
+/* MAIN DIRECTORY */
 main {
   padding: 1rem;
 }
@@ -260,7 +260,7 @@ main {
   color: black;
 }
 
-/* Toggle Buttons */
+/* Toggle Buttons in Directory Page */
 .view-toggle {
   display: flex;
   justify-content: right;
@@ -282,7 +282,7 @@ main {
   background-color: black;
 }
 
-/* Grid View */
+/* Grid View in Directory Page */
 .grid-view {
   display: grid;
   grid-template-columns: 1fr;
@@ -322,7 +322,7 @@ main {
   word-break: break-word;
 }
 
-/* List View */
+/* List View in Directory Page */
 .list-view {
   display: flex;
   flex-direction: column;
@@ -338,7 +338,6 @@ main {
   text-align: center;
   color: #0763a5;
   margin-bottom: 2rem;
-
 }
 
 .join-container {
@@ -465,7 +464,43 @@ p {
   margin-bottom: 1rem;
 }
 
-/* ------------------ FOOTER ------------------ */
+/* DISCOVERY PAGE */
+.discover-grid {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-areas:
+  "card1"
+  "card2"
+  "card3"
+  "card4"
+  "card5"
+  "card6"
+  "card7"
+  "card8";
+}
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
+
+.discover-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* FOOTER */
 footer {
   background-color: #0763a5;
   padding: 2rem 1rem;

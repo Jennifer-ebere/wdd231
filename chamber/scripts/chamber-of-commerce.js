@@ -1,5 +1,58 @@
+import { places } from '../data/places.mjs';
+
 document.addEventListener("DOMContentLoaded", () => {
 
+    /* DISCOVERY PAGE*/
+    const container = document.getElementById("discover-grid");
+
+    if (container) {
+        places.forEach((place) => {
+
+            const card = document.createElement("div");
+            card.classList.add("discover-card");
+
+            card.innerHTML = `
+            <figure>
+                <img src="${place.image}" alt="${place.name}" loading="lazy">
+            </figure>
+
+            <div class="discover-info">
+                <h2>${place.name}</h2>
+                <address>${place.address}</address>
+                <p>${place.description}</p>
+                <button>Learn More</button>
+            </div>
+        `;
+
+            container.appendChild(card);
+        });
+    }
+
+    /* VISITOR MESSAGE */
+    const message = document.getElementById("visitor-message");
+
+    if (message) {
+        const lastVisit = localStorage.getItem("lastVisit");
+        const now = Date.now();
+
+        if (!lastVisit) {
+            message.textContent = "Welcome! Let us know if you have any questions.";
+        } else {
+            const daysBetween = Math.floor((now - lastVisit) / 86400000);
+
+            if (daysBetween < 1) {
+                message.textContent = "Back so soon! Awesome!";
+            } else if (daysBetween === 1) {
+                message.textContent = "You last visited 1 day ago.";
+            } else {
+                message.textContent = `You last visited ${daysBetween} days ago.`;
+            }
+        }
+
+        localStorage.setItem("lastVisit", now);
+    }
+
+    /* MODAL IN THE JOIN PAGE */
     document.querySelectorAll("[data-modal]").forEach(button => {
         button.addEventListener("click", () => {
             const modalId = button.dataset.modal;
@@ -13,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    /* HAMBURGER MENU ON SMALL SCREEN */
     const menuButton = document.querySelector("#menu");
     const nav = document.querySelector(".navigation");
 
@@ -51,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     set("timestamp", params.get("timestamp"));
 
 
+    /* VISIBLE YEAR AND COPYRIGHT ON EACH PAGE */
     const yearSpan = document.querySelector("#currentYear");
     const lastModifiedSpan = document.querySelector("#lastModified");
 
@@ -62,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lastModifiedSpan.textContent =
         `Last Modification: ${new Date(document.lastModified).toLocaleString()}`;
 
+    /* WEATHER AND FORECAST ON THE HOME PAGE */
     const apiKey = "45703f9f2e9fb2f9c18782ef5b6a71f5";
     const latitude = 6.63;
     const longitude = 3.34;
@@ -162,6 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     getForecast();
 
+    /* 3 CARDS ON THE HOME PAGE  */
     async function loadSpotlights() {
         try {
             const container = document.getElementById("spotlight-container");
@@ -212,7 +269,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     Visit Website
                 </a>
             `;
-
                 container.appendChild(card);
             });
 
@@ -221,4 +277,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     loadSpotlights();
+
 })

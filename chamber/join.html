@@ -35,7 +35,7 @@
       href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <script src="scripts/chamber-of-commerce.js" defer></script>
+    <script type="module" src="scripts/chamber-of-commerce.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
@@ -71,11 +71,8 @@
 
     <main class="main-home">
       <h1 class="head">Join Our Chamber of Commerce</h1>
-
       <div class="join-container">
-
         <form method="get" action="thankyou.html">
-
           <label>First Name <input type="text" name="firstname" required title="Enter your first name" autocomplete="given-name"></label>
           <label>Last Name <input type="text" name="lastname" required title="Enter your last name" autocomplete="family-name"></label>
           <label>Organizational Title <input type="text" name="organizationtitle" title="Enter your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
@@ -106,7 +103,6 @@
         </form>
 
         <!-- MEMBERSHIP CARDS -->
-
         <section class="membership-cards">
           <div class="card">
             <h2>NP Membership</h2>
@@ -132,7 +128,6 @@
             <button type="button" data-modal="goldModal">Learn More</button>
           </div>
         </section>
-
       </div>
 
       <!-- NP MODAL -->
@@ -201,7 +196,6 @@
         <p>This level is best suited for established businesses seeking strong brand recognition and influence.</p>
         <button type="button">Close</button>
       </dialog>
-
     </main>
 
     <footer>
