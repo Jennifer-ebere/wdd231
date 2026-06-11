@@ -1,0 +1,71 @@
+@media screen and (min-width: 768px) {
+  /* NAVIGATION */
+  #menuBtn {
+    display: none;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  .navMenu {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .navMenu li {
+    border: none;
+  }
+
+  .navMenu a {
+    padding: 0.5rem 1rem;
+  }
+
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+   /* RECIPES */
+  #recipesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+   /* COOKING TIPS */
+  .tips-section ol {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  /* RECIPES */
+  #recipesContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .featured .recipe-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* COOKING TIPS */
+  .tips-section ol {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .tips-section li:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+    background-color: var(--accent1-color);
+    color: var(--headline-color-on-color);
+  }
+}

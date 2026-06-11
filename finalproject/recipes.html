@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Bites Recipes Page</title>
+    <meta name="description"
+        content="Recipes Page for discovering delicious recipes, cooking tips, and meal ideas for every occasion that you will love." />
+    <meta name="author" content="Ebere Jennifer Chikaodi" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Tasty Bites Recipes page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Welcome to the Tasty Bites Recipes Page — Discover delicious recipes and cooking tips and make your meals an experience to remember." />
+    <meta property="og:image" content="https://jennifer-ebere.github.io/wdd231/finalproject/images/hero.webp" />
+    <meta property="og:url" content="https://jennifer-ebere.github.io/wdd231/finalproject" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'"
+        rel="stylesheet" />
+    <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/recipes.js"></script>
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/tasty-bites-logo.webp" fetchpriority="high" loading="eager" alt="Tasty Bites Logo"
+                width="60" height="60" />
+            <h2>Tasty Bites</h2>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+        <nav>
+            <ul class="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+                <li><a href="tips.html">Cooking Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-home">
+
+        <section class="recipes-section">
+            <h1 class="intro">Explore Tasty Recipes &#127802;</h1>
+
+            <div class="search-container">
+                <label for="recipeSearch" class="sr-only"> Search Recipes </label>
+                <input type="text" id="recipeSearch" placeholder="Search recipes...">
+            </div>
+
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all"> All </button>
+                <button class="filter-btn" data-category="breakfast"> Breakfast </button>
+                <button class="filter-btn" data-category="lunch"> Lunch </button>
+                <button class="filter-btn" data-category="dinner"> Dinner </button>
+                <button class="filter-btn" data-category="dessert"> Dessert </button>
+            </div>
+
+            <!-- Recipes will be inserted here -->
+
+            <div id="recipesContainer"></div>
+            <div id="recipeModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close-btn">✕</span>
+                    <div id="modalBody"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="submit-recipe">
+
+        <h2>Share Your Favorite Recipe</h2>
+
+        <form action="submit.html" method="get">
+            <label for="fullname"> Full Name </label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="email"> Email </label>
+            <input type="email" id="email" autocomplete="email" name="email" required>
+            <label for="recipeName"> Recipe Name </label>
+            <input type="text" id="recipeName" name="recipeName" required>
+            <label for="category"> Category </label>
+            <select id="category" name="category" required>
+                <option value=""> Select Category </option>
+                <option value="Breakfast"> Breakfast </option>
+                <option value="Lunch"> Lunch </option>
+                <option value="Dinner"> Dinner </option>
+                <option value="Dessert"> Dessert </option>
+            </select>
+
+            <label for="instructions"> Why do you love this recipe? </label>
+            <textarea id="instructions" name="instructions" rows="5"></textarea>
+            <input type="submit" value="Submit Recipe">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Tasty Bites</p>
+        <p>Jennifer Chikaodi Ebere</p>
+        <p>WDD231 Final Project</p>
+        <a href="#">Project Video</a>
+    </footer>
+</body>
+
+</html>

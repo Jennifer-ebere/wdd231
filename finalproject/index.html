@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Bites HomePage</title>
+    <meta name="description"
+        content="Homepage for discovering delicious recipes, cooking tips, and meal ideas for every occasion that you will love." />
+    <meta name="author" content="Ebere Jennifer Chikaodi" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Tasty Bites Homepage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Welcome to the Tasty Bites HomePage — Discover delicious recipes and cooking tips and make your meals an experience to remember." />
+    <meta property="og:image" content="https://jennifer-ebere.github.io/wdd231/finalproject/images/hero.webp" />
+    <meta property="og:url" content="https://jennifer-ebere.github.io/wdd231/finalproject" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap'"
+        rel="stylesheet" />
+    <script type="module" src="scripts/main.js"></script>
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/tasty-bites-logo.webp" fetchpriority="high" loading="eager" alt="Tasty Bites Logo"
+                width="60" height="60" />
+            <h2>Tasty Bites</h2>
+        </div>
+
+        <button id="menuBtn" aria-label="Toggle navigation">☰</button>
+
+        <nav>
+            <ul class="navMenu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="tips.html">Cooking Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-home">
+
+        <section class="hero">
+            <div class="hero-text">
+                <h2>Delicious Recipes Made Simple</h2>
+                <p>Think Nigerian food is complicated? </p>
+                <p>Think again. Get foolproof recipes, quick kitchen hacks, and flavor-packed meals made easy for
+                    beginners</p>
+                <p>Yes, you can cook this! </p>
+                <p>Explore step-by-step recipes that turn everyday ingredients into spectacular Nigerian dishes. Bold
+                    flavors. Zero fuss. </p>
+                <p>Find easy and tasty recipes for every occasion.</p>
+                <a href="recipes.html" class="btn">Explore Recipes</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/hero.webp" alt="Delicious food" loading="lazy">
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Recipes</h2>
+            <div id="featuredRecipes" class="recipe-grid">
+                <!-- JavaScript will populate this -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> Tasty Bites</p>
+        <p>Jennifer Chikaodi Ebere</p>
+        <p>WDD231 Final Project</p>
+        <a href="#">Project Video</a>
+    </footer>
+</body>
+
+</html>

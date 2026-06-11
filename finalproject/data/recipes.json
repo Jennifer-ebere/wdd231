@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Jollof Rice",
+    "category": "Dinner",
+    "cookTime": "45 mins",
+    "difficulty": "Medium",
+    "image": "images/jollof.webp",
+    "ingredients": "Rice, tomatoes, pepper, onions, seasoning",
+    "instructions": "Cook rice in a rich tomato sauce until tender."
+  },
+  {
+    "id": 2,
+    "name": "Fried Rice",
+    "category": "Dinner",
+    "cookTime": "40 mins",
+    "difficulty": "Medium",
+    "image": "images/fried-rice.webp",
+    "ingredients": "Rice, vegetables, liver, seasoning",
+    "instructions": "Cook rice and stir-fry with vegetables."
+  },
+  {
+    "id": 3,
+    "name": "Pancakes",
+    "category": "Breakfast",
+    "cookTime": "20 mins",
+    "difficulty": "Easy",
+    "image": "images/pancakes.webp",
+    "ingredients": "Flour, eggs, milk, sugar",
+    "instructions": "Mix ingredients and fry until golden brown."
+  },
+  {
+    "id": 4,
+    "name": "Fruit Salad",
+    "category": "Snack",
+    "cookTime": "10 mins",
+    "difficulty": "Easy",
+    "image": "images/fruit-salad.webp",
+    "ingredients": "Apples, bananas, grapes, oranges",
+    "instructions": "Wash, chop and combine fruits."
+  },
+  {
+    "id": 5,
+    "name": "Spaghetti Bolognese",
+    "category": "Dinner",
+    "cookTime": "35 mins",
+    "difficulty": "Easy",
+    "image": "images/spaghetti.webp",
+    "ingredients": "Spaghetti, minced meat, tomato sauce",
+    "instructions": "Cook spaghetti and serve with meat sauce."
+  },
+  {
+    "id": 6,
+    "name": "Chicken Stir Fry",
+    "category": "Lunch",
+    "cookTime": "25 mins",
+    "difficulty": "Easy",
+    "image": "images/stir-fry.webp",
+    "ingredients": "Chicken, vegetables, soy sauce",
+    "instructions": "Stir-fry chicken and vegetables together."
+  },
+  {
+    "id": 7,
+    "name": "Beans Porridge",
+    "category": "Lunch",
+    "cookTime": "50 mins",
+    "difficulty": "Medium",
+    "image": "images/beans.webp",
+    "ingredients": "Beans, palm oil, pepper",
+    "instructions": "Cook beans until soft and flavorful."
+  },
+  {
+    "id": 8,
+    "name": "Yam Porridge",
+    "category": "Dinner",
+    "cookTime": "40 mins",
+    "difficulty": "Medium",
+    "image": "images/yam.webp",
+    "ingredients": "Yam, tomatoes, pepper, fish",
+    "instructions": "Cook yam in seasoned sauce until tender."
+  },
+  {
+    "id": 9,
+    "name": "Vegetable Soup",
+    "category": "Dinner",
+    "cookTime": "60 mins",
+    "difficulty": "Hard",
+    "image": "images/vegetable-soup.webp",
+    "ingredients": "Vegetables, meat, fish, seasoning",
+    "instructions": "Cook ingredients and simmer together."
+  },
+  {
+    "id": 10,
+    "name": "Omelette",
+    "category": "Breakfast",
+    "cookTime": "10 mins",
+    "difficulty": "Easy",
+    "image": "images/omelette.webp",
+    "ingredients": "Eggs, onions, tomatoes",
+    "instructions": "Whisk eggs and fry until cooked."
+  },
+  {
+    "id": 11,
+    "name": "Coconut Rice",
+    "category": "Dinner",
+    "cookTime": "50 mins",
+    "difficulty": "Medium",
+    "image": "images/coconut-rice.webp",
+    "ingredients": "Rice, coconut milk, seasoning",
+    "instructions": "Cook rice in coconut milk."
+  },
+  {
+    "id": 12,
+    "name": "Akara",
+    "category": "Breakfast",
+    "cookTime": "30 mins",
+    "difficulty": "Medium",
+    "image": "images/akara.webp",
+    "ingredients": "Beans, pepper, onions",
+    "instructions": "Blend and fry bean batter."
+  },
+  {
+    "id": 13,
+    "name": "Chicken Salad",
+    "category": "Lunch",
+    "cookTime": "20 mins",
+    "difficulty": "Easy",
+    "image": "images/chicken-salad.webp",
+    "ingredients": "Chicken, lettuce, cucumber",
+    "instructions": "Mix ingredients and serve chilled."
+  },
+  {
+    "id": 14,
+    "name": "Banana Bread",
+    "category": "Dessert",
+    "cookTime": "60 mins",
+    "difficulty": "Medium",
+    "image": "images/banana-bread.webp",
+    "ingredients": "Bananas, flour, eggs, sugar",
+    "instructions": "Bake mixture until golden brown."
+  },
+  {
+    "id": 15,
+    "name": "Chocolate Cake",
+    "category": "Dessert",
+    "cookTime": "75 mins",
+    "difficulty": "Hard",
+    "image": "images/chocolate-cake.webp",
+    "ingredients": "Flour, cocoa, eggs, sugar",
+    "instructions": "Bake batter and allow to cool."
+  }
+]
