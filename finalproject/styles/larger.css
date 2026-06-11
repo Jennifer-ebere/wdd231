@@ -54,10 +54,10 @@
     gap: 2rem;
   }
 
-  .hero-text,
+  /* .hero-text,
   .hero-image {
     flex: 1;
-  }
+  } */
 
   .hero-image img {
     width: 100%;
