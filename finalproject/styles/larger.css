@@ -46,6 +46,12 @@
 @media screen and (min-width: 1024px) {
   .hero {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 12px;
+    gap: 2rem;
   }
 
   .hero-text,
