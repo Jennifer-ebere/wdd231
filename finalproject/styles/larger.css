@@ -1,4 +1,5 @@
 @media screen and (min-width: 768px) {
+
   /* NAVIGATION */
   #menuBtn {
     display: none;
@@ -29,16 +30,31 @@
     align-items: center;
   }
 
+  .hero {
+    flex-wrap: nowrap;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
   .hero h1 {
     font-size: 1.8rem;
   }
 
-   /* RECIPES */
+  /* RECIPES */
   #recipesContainer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-   /* COOKING TIPS */
+  /* COOKING TIPS */
   .tips-section ol {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -47,6 +63,7 @@
 
 
 @media screen and (min-width: 1024px) {
+
   /* RECIPES */
   #recipesContainer {
     grid-template-columns: repeat(4, 1fr);
