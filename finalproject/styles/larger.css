@@ -30,8 +30,22 @@
     align-items: center;
   }
 
+  /* RECIPES */
+  #recipesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* COOKING TIPS */
+  .tips-section ol {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
   .hero {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .hero-text,
@@ -48,21 +62,6 @@
   .hero h1 {
     font-size: 1.8rem;
   }
-
-  /* RECIPES */
-  #recipesContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  /* COOKING TIPS */
-  .tips-section ol {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-}
-
-
-@media screen and (min-width: 1024px) {
 
   /* RECIPES */
   #recipesContainer {
